@@ -11,6 +11,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.vue resources/assets/js"
   },
   "devDependencies": {
+    "adminlte-vue": "^0.1.0",
     "acacha-forms": "^0.1.4",
     "admin-lte": "^2.3.11",
     "axios": "^0.15.3",
