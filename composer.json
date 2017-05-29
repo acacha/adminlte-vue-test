@@ -9,6 +9,7 @@
         "acacha/admin-lte-template-laravel": "^4.1",
         "barryvdh/laravel-debugbar": "^2.3",
         "barryvdh/laravel-ide-helper": "^2.3",
+        "laravel/dusk": "^1.1",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "spatie/laravel-menu": "^2.1"

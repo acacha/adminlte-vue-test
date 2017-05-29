@@ -23773,7 +23773,7 @@ module.exports = function(module) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_adminlte_vue__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_adminlte_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_adminlte_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_adminlte_vue__);
 
 /**
@@ -23782,7 +23782,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(50);
+__webpack_require__(49);
 
 window.Vue = __webpack_require__(6);
 
@@ -24835,164 +24835,6 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- * Acacha adminlte-vue0.1.1
- * https://github.com/acacha/adminlte-vue
- * Released under the MIT License.
- */
-
-(function webpackUniversalModuleDefinition(root, factory) {
-  if (( false ? "undefined" : _typeof(exports)) === "object" && ( false ? "undefined" : _typeof(module)) === "object") module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") exports["AcachaAdminlteVue"] = factory();else root["AcachaAdminlteVue"] = factory();
-})(undefined, function () {
-  return function (modules) {
-    var installedModules = {};function __webpack_require__(moduleId) {
-      if (installedModules[moduleId]) {
-        return installedModules[moduleId].exports;
-      }var module = installedModules[moduleId] = { i: moduleId, l: false, exports: {} };modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);module.l = true;return module.exports;
-    }__webpack_require__.m = modules;__webpack_require__.c = installedModules;__webpack_require__.i = function (value) {
-      return value;
-    };__webpack_require__.d = function (exports, name, getter) {
-      if (!__webpack_require__.o(exports, name)) {
-        Object.defineProperty(exports, name, { configurable: false, enumerable: true, get: getter });
-      }
-    };__webpack_require__.n = function (module) {
-      var getter = module && module.__esModule ? function getDefault() {
-        return module["default"];
-      } : function getModuleExports() {
-        return module;
-      };__webpack_require__.d(getter, "a", getter);return getter;
-    };__webpack_require__.o = function (object, property) {
-      return Object.prototype.hasOwnProperty.call(object, property);
-    };__webpack_require__.p = "";return __webpack_require__(__webpack_require__.s = 3);
-  }([function (module, exports) {
-    module.exports = function normalizeComponent(rawScriptExports, compiledTemplate, injectStyles, scopeId, moduleIdentifier) {
-      var esModule;var scriptExports = rawScriptExports = rawScriptExports || {};var type = _typeof(rawScriptExports.default);if (type === "object" || type === "function") {
-        esModule = rawScriptExports;scriptExports = rawScriptExports.default;
-      }var options = typeof scriptExports === "function" ? scriptExports.options : scriptExports;if (compiledTemplate) {
-        options.render = compiledTemplate.render;options.staticRenderFns = compiledTemplate.staticRenderFns;
-      }if (scopeId) {
-        options._scopeId = scopeId;
-      }var hook;if (moduleIdentifier) {
-        hook = function hook(context) {
-          context = context || this.$vnode && this.$vnode.ssrContext || this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext;if (!context && typeof __VUE_SSR_CONTEXT__ !== "undefined") {
-            context = __VUE_SSR_CONTEXT__;
-          }if (injectStyles) {
-            injectStyles.call(this, context);
-          }if (context && context._registeredComponents) {
-            context._registeredComponents.add(moduleIdentifier);
-          }
-        };options._ssrRegister = hook;
-      } else if (injectStyles) {
-        hook = injectStyles;
-      }if (hook) {
-        var functional = options.functional;var existing = functional ? options.render : options.beforeCreate;if (!functional) {
-          options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
-        } else {
-          options.render = function renderWithStyleInjection(h, context) {
-            hook.call(context);return existing(h, context);
-          };
-        }
-      }return { esModule: esModule, exports: scriptExports, options: options };
-    };
-  }, function (module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.default = function (Vue) {
-      Vue.component("adminlte-vue-alert", _alert2.default);Vue.component("adminlte-vue-box", _box2.default);
-    };var _alert = __webpack_require__(6);var _alert2 = _interopRequireDefault(_alert);var _box = __webpack_require__(7);var _box2 = _interopRequireDefault(_box);function _interopRequireDefault(obj) {
-      return obj && obj.__esModule ? obj : { default: obj };
-    }module.exports = exports["default"];
-  }, function (module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.todo = todo;exports.todo2 = todo2;var _exports = { todo: {} };exports.default = _exports;function todo() {
-      return "TODO";
-    }function todo2() {
-      return "TODO2";
-    }
-  }, function (module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });var _index = __webpack_require__(1);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(2);function _interopRequireDefault(obj) {
-      return obj && obj.__esModule ? obj : { default: obj };
-    }var AdminlteVue = { todo: _util.todo, install: function install(Vue) {
-        (0, _index2.default)(Vue);Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
-      } };if (typeof window !== "undefined" && window.Vue) {
-      window.Vue.use(AdminlteVue);window.Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
-    }exports.default = AdminlteVue;module.exports = exports["default"];
-  }, function (module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.default = {};module.exports = exports["default"];
-  }, function (module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.default = {};module.exports = exports["default"];
-  }, function (module, exports, __webpack_require__) {
-    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(4), __webpack_require__(9), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/alert.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
-      return key !== "default" && key.substr(0, 2) !== "__";
-    })) {
-      console.error("named exports are not supported in *.vue files.");
-    }if (Component.options.functional) {
-      console.error("[vue-loader] alert.vue: functional components are not supported with templates, they should use render functions.");
-    }if (false) {
-      (function () {
-        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
-          hotAPI.createRecord("data-v-87bfb210", Component.options);
-        } else {
-          hotAPI.reload("data-v-87bfb210", Component.options);
-        }module.hot.dispose(function (data) {
-          disposed = true;
-        });
-      })();
-    }module.exports = Component.exports;
-  }, function (module, exports, __webpack_require__) {
-    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(5), __webpack_require__(8), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/box.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
-      return key !== "default" && key.substr(0, 2) !== "__";
-    })) {
-      console.error("named exports are not supported in *.vue files.");
-    }if (Component.options.functional) {
-      console.error("[vue-loader] box.vue: functional components are not supported with templates, they should use render functions.");
-    }if (false) {
-      (function () {
-        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
-          hotAPI.createRecord("data-v-318cbce7", Component.options);
-        } else {
-          hotAPI.reload("data-v-318cbce7", Component.options);
-        }module.hot.dispose(function (data) {
-          disposed = true;
-        });
-      })();
-    }module.exports = Component.exports;
-  }, function (module, exports, __webpack_require__) {
-    module.exports = { render: function render() {
-        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "box box-success box-solid" }, [_c("div", { staticClass: "box-header with-border" }, [_c("div", { staticClass: "box-title" }, [_vm._t("title", [_vm._v("Example box")])], 2), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c("div", { staticClass: "box-body" }, [_vm._t("default", [_vm._v("Put your content here")])], 2)]);
-      }, staticRenderFns: [function () {
-        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "box-tools pull-right" }, [_c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "remove" } }, [_c("i", { staticClass: "fa fa-times" })]), _vm._v(" "), _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "collapse" } }, [_c("i", { staticClass: "fa fa-minus" })])]);
-      }] };module.exports.render._withStripped = true;if (false) {
-      module.hot.accept();if (module.hot.data) {
-        require("vue-hot-reload-api").rerender("data-v-318cbce7", module.exports);
-      }
-    }
-  }, function (module, exports, __webpack_require__) {
-    module.exports = { render: function render() {
-        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", [_vm._v("TODO")]);
-      }, staticRenderFns: [] };module.exports.render._withStripped = true;if (false) {
-      module.hot.accept();if (module.hot.data) {
-        require("vue-hot-reload-api").rerender("data-v-87bfb210", module.exports);
-      }
-    }
-  }]);
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
-
-/***/ }),
-/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25021,7 +24863,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25086,7 +24928,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25221,7 +25063,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25327,7 +25169,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25423,7 +25265,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* global _ Vue */
@@ -25505,7 +25347,187 @@ Vue.component('reset-password-form', __webpack_require__(64));
 // });
 
 /***/ }),
-/* 51 */,
+/* 50 */,
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/**
+ * Acacha adminlte-vue 0.1.1
+ * https://github.com/acacha/adminlte-vue
+ * Released under the MIT License.
+ */
+
+(function webpackUniversalModuleDefinition(root, factory) {
+  if (( false ? "undefined" : _typeof(exports)) === "object" && ( false ? "undefined" : _typeof(module)) === "object") module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") exports["AcachaAdminlteVue"] = factory();else root["AcachaAdminlteVue"] = factory();
+})(undefined, function () {
+  return function (modules) {
+    var installedModules = {};function __webpack_require__(moduleId) {
+      if (installedModules[moduleId]) {
+        return installedModules[moduleId].exports;
+      }var module = installedModules[moduleId] = { i: moduleId, l: false, exports: {} };modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);module.l = true;return module.exports;
+    }__webpack_require__.m = modules;__webpack_require__.c = installedModules;__webpack_require__.i = function (value) {
+      return value;
+    };__webpack_require__.d = function (exports, name, getter) {
+      if (!__webpack_require__.o(exports, name)) {
+        Object.defineProperty(exports, name, { configurable: false, enumerable: true, get: getter });
+      }
+    };__webpack_require__.n = function (module) {
+      var getter = module && module.__esModule ? function getDefault() {
+        return module["default"];
+      } : function getModuleExports() {
+        return module;
+      };__webpack_require__.d(getter, "a", getter);return getter;
+    };__webpack_require__.o = function (object, property) {
+      return Object.prototype.hasOwnProperty.call(object, property);
+    };__webpack_require__.p = "";return __webpack_require__(__webpack_require__.s = 3);
+  }([function (module, exports) {
+    module.exports = function normalizeComponent(rawScriptExports, compiledTemplate, injectStyles, scopeId, moduleIdentifier) {
+      var esModule;var scriptExports = rawScriptExports = rawScriptExports || {};var type = _typeof(rawScriptExports.default);if (type === "object" || type === "function") {
+        esModule = rawScriptExports;scriptExports = rawScriptExports.default;
+      }var options = typeof scriptExports === "function" ? scriptExports.options : scriptExports;if (compiledTemplate) {
+        options.render = compiledTemplate.render;options.staticRenderFns = compiledTemplate.staticRenderFns;
+      }if (scopeId) {
+        options._scopeId = scopeId;
+      }var hook;if (moduleIdentifier) {
+        hook = function hook(context) {
+          context = context || this.$vnode && this.$vnode.ssrContext || this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext;if (!context && typeof __VUE_SSR_CONTEXT__ !== "undefined") {
+            context = __VUE_SSR_CONTEXT__;
+          }if (injectStyles) {
+            injectStyles.call(this, context);
+          }if (context && context._registeredComponents) {
+            context._registeredComponents.add(moduleIdentifier);
+          }
+        };options._ssrRegister = hook;
+      } else if (injectStyles) {
+        hook = injectStyles;
+      }if (hook) {
+        var functional = options.functional;var existing = functional ? options.render : options.beforeCreate;if (!functional) {
+          options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
+        } else {
+          options.render = function renderWithStyleInjection(h, context) {
+            hook.call(context);return existing(h, context);
+          };
+        }
+      }return { esModule: esModule, exports: scriptExports, options: options };
+    };
+  }, function (module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });exports.default = function (Vue) {
+      Vue.component("adminlte-vue-alert", _alert2.default);Vue.component("adminlte-vue-box", _box2.default);
+    };var _alert = __webpack_require__(6);var _alert2 = _interopRequireDefault(_alert);var _box = __webpack_require__(7);var _box2 = _interopRequireDefault(_box);function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : { default: obj };
+    }module.exports = exports["default"];
+  }, function (module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });exports.todo = todo;exports.todo2 = todo2;var _exports = { todo: {} };exports.default = _exports;function todo() {
+      return "TODO";
+    }function todo2() {
+      return "TODO2";
+    }
+  }, function (module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });var _index = __webpack_require__(1);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(2);function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : { default: obj };
+    }var AdminlteVue = { todo: _util.todo, install: function install(Vue) {
+        (0, _index2.default)(Vue);Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
+      } };if (typeof window !== "undefined" && window.Vue) {
+      window.Vue.use(AdminlteVue);window.Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
+    }exports.default = AdminlteVue;module.exports = exports["default"];
+  }, function (module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });exports.default = {};module.exports = exports["default"];
+  }, function (module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });exports.default = { data: function data() {
+        return { isCollapsed: this.collapsed, isCollapsable: this.collapsable, isRemovable: this.removable, isLoading: this.loading, isSolid: this.solid, headerHaveBorder: this.borderHeader };
+      }, computed: { collapseIcon: function collapseIcon() {
+          return this.isCollapsed ? "fa-plus" : "fa-minus";
+        } }, props: { collapsed: { type: Boolean, default: false }, collapsable: { type: Boolean, default: true }, removable: { type: Boolean, default: true }, loading: { type: Boolean, default: false }, solid: { type: Boolean, default: false }, borderHeader: { type: Boolean, default: true }, color: { type: String, default: "default", validator: function validator(value) {
+            var valid = ["", "primary", "info", "danger", "warning", "success", "default"];return valid.includes(value);
+          } } }, methods: { hasFooterSlot: function hasFooterSlot() {
+          return !!this.$slots["footer"];
+        }, load: function load() {
+          this.isLoading = true;
+        }, unload: function unload() {
+          this.isLoading = false;
+        }, collapse: function collapse() {
+          this.isCollapsed = true;
+        }, uncollapse: function uncollapse() {
+          this.isCollapsed = false;
+        }, expand: function expand() {
+          this.isCollapsed = false;
+        }, unExpand: function unExpand() {
+          this.isCollapsed = false;
+        }, toogleCollapse: function toogleCollapse() {
+          this.isCollapsed = !this.isCollapsed;
+        }, toogleExpand: function toogleExpand() {
+          this.isCollapsed = !this.isCollapsed;
+        }, remove: function remove() {} } };module.exports = exports["default"];
+  }, function (module, exports, __webpack_require__) {
+    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(4), __webpack_require__(9), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/alert.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
+      return key !== "default" && key.substr(0, 2) !== "__";
+    })) {
+      console.error("named exports are not supported in *.vue files.");
+    }if (Component.options.functional) {
+      console.error("[vue-loader] alert.vue: functional components are not supported with templates, they should use render functions.");
+    }if (false) {
+      (function () {
+        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
+          hotAPI.createRecord("data-v-87bfb210", Component.options);
+        } else {
+          hotAPI.reload("data-v-87bfb210", Component.options);
+        }module.hot.dispose(function (data) {
+          disposed = true;
+        });
+      })();
+    }module.exports = Component.exports;
+  }, function (module, exports, __webpack_require__) {
+    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(5), __webpack_require__(8), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/box.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
+      return key !== "default" && key.substr(0, 2) !== "__";
+    })) {
+      console.error("named exports are not supported in *.vue files.");
+    }if (Component.options.functional) {
+      console.error("[vue-loader] box.vue: functional components are not supported with templates, they should use render functions.");
+    }if (false) {
+      (function () {
+        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
+          hotAPI.createRecord("data-v-318cbce7", Component.options);
+        } else {
+          hotAPI.reload("data-v-318cbce7", Component.options);
+        }module.hot.dispose(function (data) {
+          disposed = true;
+        });
+      })();
+    }module.exports = Component.exports;
+  }, function (module, exports, __webpack_require__) {
+    module.exports = { render: function render() {
+        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "box", class: [{ "box-solid": _vm.isSolid }, { "collapsed-box": _vm.isCollapsed }, "box-" + _vm.color] }, [_c("div", { staticClass: "box-header", class: { "with-border": _vm.headerHaveBorder } }, [_c("div", { staticClass: "box-title" }, [_vm._t("title", [_vm._v("Put your title here using slot with name title")])], 2), _vm._v(" "), _c("div", { staticClass: "box-tools pull-right" }, [_vm._t("box-tools", [_vm.isRemovable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "remove" } }, [_c("i", { staticClass: "fa fa-times" })]) : _vm._e(), _vm._v(" "), _vm.isCollapsable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "collapse" } }, [_c("i", { staticClass: "fa", class: _vm.collapseIcon })]) : _vm._e()])], 2)]), _vm._v(" "), _c("div", { staticClass: "box-body" }, [_vm._t("default", [_vm._v("Put your content here using default slot")])], 2), _vm._v(" "), _vm.hasFooterSlot() ? _c("div", { staticClass: "box-footer" }, [_vm._t("footer", [_vm._v("This is the footer!")])], 2) : _vm._e(), _vm._v(" "), _vm.isLoading ? _c("div", { staticClass: "overlay" }, [_c("i", { staticClass: "fa fa-refresh fa-spin" })]) : _vm._e()]);
+      }, staticRenderFns: [] };module.exports.render._withStripped = true;if (false) {
+      module.hot.accept();if (module.hot.data) {
+        require("vue-hot-reload-api").rerender("data-v-318cbce7", module.exports);
+      }
+    }
+  }, function (module, exports, __webpack_require__) {
+    module.exports = { render: function render() {
+        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", [_vm._v("TODO")]);
+      }, staticRenderFns: [] };module.exports.render._withStripped = true;if (false) {
+      module.hot.accept();if (module.hot.data) {
+        require("vue-hot-reload-api").rerender("data-v-87bfb210", module.exports);
+      }
+    }
+  }]);
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
+
+/***/ }),
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43772,7 +43794,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(45),
+  __webpack_require__(44),
   /* template */
   __webpack_require__(65),
   /* scopeId */
@@ -43780,7 +43802,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/home/sergi/Code/adminlte-vue-test/resources/assets/js/components/Example.vue"
+Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue-test/resources/assets/js/components/Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43810,7 +43832,7 @@ __webpack_require__(70)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(46),
+  __webpack_require__(45),
   /* template */
   __webpack_require__(66),
   /* scopeId */
@@ -43818,7 +43840,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/home/sergi/Code/adminlte-vue-test/resources/assets/js/components/auth/EmailResetPasswordForm.vue"
+Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue-test/resources/assets/js/components/auth/EmailResetPasswordForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] EmailResetPasswordForm.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43848,7 +43870,7 @@ __webpack_require__(71)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(47),
+  __webpack_require__(46),
   /* template */
   __webpack_require__(67),
   /* scopeId */
@@ -43856,7 +43878,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/home/sergi/Code/adminlte-vue-test/resources/assets/js/components/auth/LoginForm.vue"
+Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue-test/resources/assets/js/components/auth/LoginForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] LoginForm.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43886,7 +43908,7 @@ __webpack_require__(73)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(48),
+  __webpack_require__(47),
   /* template */
   __webpack_require__(69),
   /* scopeId */
@@ -43894,7 +43916,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/home/sergi/Code/adminlte-vue-test/resources/assets/js/components/auth/RegisterForm.vue"
+Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue-test/resources/assets/js/components/auth/RegisterForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] RegisterForm.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43924,7 +43946,7 @@ __webpack_require__(72)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(49),
+  __webpack_require__(48),
   /* template */
   __webpack_require__(68),
   /* scopeId */
@@ -43932,7 +43954,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/home/sergi/Code/adminlte-vue-test/resources/assets/js/components/auth/ResetPasswordForm.vue"
+Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue-test/resources/assets/js/components/auth/ResetPasswordForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ResetPasswordForm.vue: functional components are not supported with templates, they should use render functions.")}
 

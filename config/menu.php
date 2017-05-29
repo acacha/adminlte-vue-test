@@ -35,7 +35,9 @@ Menu::macro('sidebar', function () {
         ->add(Menu::adminlteSeparator('Acacha Adminlte'))
         #adminlte_menu
         ->add(Link::toUrl('provesvue2', '<i class="fa fa-link"></i><span>Provesvue2</span>'))
-        ->add(Link::toUrl('provesvue', '<i class="fa fa-link"></i><span>Provesvue</span>'))
+        ->add(Link::toUrl('widgets', '<i class="fa fa-link"></i><span>Widgets</span>'))
+        ->add(Link::toUrl('widgetsDemo', '<i class="fa fa-link"></i><span>WidgetsDemo</span>'))
+
         ->add(Menu::adminlteSeparator('SECONDARY MENU'))
         ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-share"></i><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')

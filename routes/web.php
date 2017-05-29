@@ -24,6 +24,8 @@ Route::group(['middleware' => 'auth'], function () {
     #adminlte_routes
     Route::get('provesvue2', 'Provesvue2Controller@index')->name('provesvue2');
 
-    Route::get('provesvue', 'ProvesvueController@index')->name('provesvue');
+    Route::get('widgets', 'WidgetsController@index')->name('widgets');
+
+    Route::get('widgetsDemo', 'WidgetsController@demo')->name('widgetsDemo');
 
 });
