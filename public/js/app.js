@@ -25434,13 +25434,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
   }, function (module, exports, __webpack_require__) {
     "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });var _index = __webpack_require__(1);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(2);function _interopRequireDefault(obj) {
+    Object.defineProperty(exports, "__esModule", { value: true });exports.Box = Box;var _index = __webpack_require__(1);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(2);var _box = __webpack_require__(7);var _box2 = _interopRequireDefault(_box);function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : { default: obj };
     }var AdminlteVue = { todo: _util.todo, install: function install(Vue) {
         (0, _index2.default)(Vue);Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
       } };if (typeof window !== "undefined" && window.Vue) {
       window.Vue.use(AdminlteVue);window.Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
-    }exports.default = AdminlteVue;module.exports = exports["default"];
+    }exports.default = AdminlteVue;function Box() {
+      return _box2.default;
+    }
   }, function (module, exports, __webpack_require__) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });exports.default = {};module.exports = exports["default"];
