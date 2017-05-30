@@ -25387,7 +25387,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       };__webpack_require__.d(getter, "a", getter);return getter;
     };__webpack_require__.o = function (object, property) {
       return Object.prototype.hasOwnProperty.call(object, property);
-    };__webpack_require__.p = "";return __webpack_require__(__webpack_require__.s = 3);
+    };__webpack_require__.p = "";return __webpack_require__(__webpack_require__.s = 6);
   }([function (module, exports) {
     module.exports = function normalizeComponent(rawScriptExports, compiledTemplate, injectStyles, scopeId, moduleIdentifier) {
       var esModule;var scriptExports = rawScriptExports = rawScriptExports || {};var type = _typeof(rawScriptExports.default);if (type === "object" || type === "function") {
@@ -25419,10 +25419,64 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }return { esModule: esModule, exports: scriptExports, options: options };
     };
   }, function (module, exports, __webpack_require__) {
+    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(7), __webpack_require__(11), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/alert.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
+      return key !== "default" && key.substr(0, 2) !== "__";
+    })) {
+      console.error("named exports are not supported in *.vue files.");
+    }if (Component.options.functional) {
+      console.error("[vue-loader] alert.vue: functional components are not supported with templates, they should use render functions.");
+    }if (false) {
+      (function () {
+        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
+          hotAPI.createRecord("data-v-87bfb210", Component.options);
+        } else {
+          hotAPI.reload("data-v-87bfb210", Component.options);
+        }module.hot.dispose(function (data) {
+          disposed = true;
+        });
+      })();
+    }module.exports = Component.exports;
+  }, function (module, exports, __webpack_require__) {
+    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(8), __webpack_require__(10), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/box.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
+      return key !== "default" && key.substr(0, 2) !== "__";
+    })) {
+      console.error("named exports are not supported in *.vue files.");
+    }if (Component.options.functional) {
+      console.error("[vue-loader] box.vue: functional components are not supported with templates, they should use render functions.");
+    }if (false) {
+      (function () {
+        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
+          hotAPI.createRecord("data-v-318cbce7", Component.options);
+        } else {
+          hotAPI.reload("data-v-318cbce7", Component.options);
+        }module.hot.dispose(function (data) {
+          disposed = true;
+        });
+      })();
+    }module.exports = Component.exports;
+  }, function (module, exports, __webpack_require__) {
+    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(9), __webpack_require__(12), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/modal.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
+      return key !== "default" && key.substr(0, 2) !== "__";
+    })) {
+      console.error("named exports are not supported in *.vue files.");
+    }if (Component.options.functional) {
+      console.error("[vue-loader] modal.vue: functional components are not supported with templates, they should use render functions.");
+    }if (false) {
+      (function () {
+        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
+          hotAPI.createRecord("data-v-d6c0f06e", Component.options);
+        } else {
+          hotAPI.reload("data-v-d6c0f06e", Component.options);
+        }module.hot.dispose(function (data) {
+          disposed = true;
+        });
+      })();
+    }module.exports = Component.exports;
+  }, function (module, exports, __webpack_require__) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });exports.default = function (Vue) {
-      Vue.component("adminlte-vue-alert", _alert2.default);Vue.component("adminlte-vue-box", _box2.default);
-    };var _alert = __webpack_require__(6);var _alert2 = _interopRequireDefault(_alert);var _box = __webpack_require__(7);var _box2 = _interopRequireDefault(_box);function _interopRequireDefault(obj) {
+      Vue.component("adminlte-vue-alert", _alert2.default);Vue.component("adminlte-vue-box", _box2.default);Vue.component("adminlte-vue-modal", _modal2.default);
+    };var _alert = __webpack_require__(1);var _alert2 = _interopRequireDefault(_alert);var _box = __webpack_require__(2);var _box2 = _interopRequireDefault(_box);var _modal = __webpack_require__(3);var _modal2 = _interopRequireDefault(_modal);function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : { default: obj };
     }module.exports = exports["default"];
   }, function (module, exports, __webpack_require__) {
@@ -25434,15 +25488,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
   }, function (module, exports, __webpack_require__) {
     "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });exports.Box = Box;var _index = __webpack_require__(1);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(2);var _box = __webpack_require__(7);var _box2 = _interopRequireDefault(_box);function _interopRequireDefault(obj) {
+    Object.defineProperty(exports, "__esModule", { value: true });exports.Modal = exports.Alert = exports.Box = undefined;var _index = __webpack_require__(4);var _index2 = _interopRequireDefault(_index);var _util = __webpack_require__(5);var _box = __webpack_require__(2);var _box2 = _interopRequireDefault(_box);var _alert = __webpack_require__(1);var _alert2 = _interopRequireDefault(_alert);var _modal = __webpack_require__(3);var _modal2 = _interopRequireDefault(_modal);function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : { default: obj };
     }var AdminlteVue = { todo: _util.todo, install: function install(Vue) {
         (0, _index2.default)(Vue);Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
       } };if (typeof window !== "undefined" && window.Vue) {
       window.Vue.use(AdminlteVue);window.Vue.$adminlte = { todo: _util.todo, todo2: _util.todo2 };
-    }exports.default = AdminlteVue;function Box() {
-      return _box2.default;
-    }
+    }exports.default = AdminlteVue;exports.Box = _box2.default;exports.Alert = _alert2.default;exports.Modal = _modal2.default;
   }, function (module, exports, __webpack_require__) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });exports.default = {};module.exports = exports["default"];
@@ -25454,7 +25506,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           return this.isCollapsed ? "fa-plus" : "fa-minus";
         } }, props: { collapsed: { type: Boolean, default: false }, collapsable: { type: Boolean, default: true }, removable: { type: Boolean, default: true }, loading: { type: Boolean, default: false }, solid: { type: Boolean, default: false }, borderHeader: { type: Boolean, default: true }, color: { type: String, default: "default", validator: function validator(value) {
             var valid = ["", "primary", "info", "danger", "warning", "success", "default"];return valid.includes(value);
-          } } }, methods: { hasFooterSlot: function hasFooterSlot() {
+          } } }, watch: { collapsed: function collapsed() {
+          this.isCollapsed = this.collapsed;
+        }, loading: function loading() {
+          this.isLoading = this.loading;
+        } }, methods: { hasFooterSlot: function hasFooterSlot() {
           return !!this.$slots["footer"];
         }, load: function load() {
           this.isLoading = true;
@@ -25474,44 +25530,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           this.isCollapsed = !this.isCollapsed;
         }, remove: function remove() {} } };module.exports = exports["default"];
   }, function (module, exports, __webpack_require__) {
-    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(4), __webpack_require__(9), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/alert.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
-      return key !== "default" && key.substr(0, 2) !== "__";
-    })) {
-      console.error("named exports are not supported in *.vue files.");
-    }if (Component.options.functional) {
-      console.error("[vue-loader] alert.vue: functional components are not supported with templates, they should use render functions.");
-    }if (false) {
-      (function () {
-        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
-          hotAPI.createRecord("data-v-87bfb210", Component.options);
-        } else {
-          hotAPI.reload("data-v-87bfb210", Component.options);
-        }module.hot.dispose(function (data) {
-          disposed = true;
-        });
-      })();
-    }module.exports = Component.exports;
-  }, function (module, exports, __webpack_require__) {
-    var disposed = false;var Component = __webpack_require__(0)(__webpack_require__(5), __webpack_require__(8), null, null, null);Component.options.__file = "/home/sergi/Code/acacha/adminlte-vue/src/components/box.vue";if (Component.esModule && Object.keys(Component.esModule).some(function (key) {
-      return key !== "default" && key.substr(0, 2) !== "__";
-    })) {
-      console.error("named exports are not supported in *.vue files.");
-    }if (Component.options.functional) {
-      console.error("[vue-loader] box.vue: functional components are not supported with templates, they should use render functions.");
-    }if (false) {
-      (function () {
-        var hotAPI = require("vue-hot-reload-api");hotAPI.install(require("vue"), false);if (!hotAPI.compatible) return;module.hot.accept();if (!module.hot.data) {
-          hotAPI.createRecord("data-v-318cbce7", Component.options);
-        } else {
-          hotAPI.reload("data-v-318cbce7", Component.options);
-        }module.hot.dispose(function (data) {
-          disposed = true;
-        });
-      })();
-    }module.exports = Component.exports;
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });exports.default = { data: function data() {
+        return { isCancellable: this.cancellable, isOkable: this.ok };
+      }, props: { color: { type: String, default: "", validator: function validator(value) {
+            var valid = ["", "primary", "info", "danger", "warning", "success"];return valid.includes(value);
+          } }, cancellable: { type: Boolean, default: true }, cancelText: { type: String, default: "Cancel" }, ok: { type: Boolean, default: true }, okText: { type: String, default: "Ok" }, footer: { type: Boolean, default: true } }, methods: { hasFooterSlot: function hasFooterSlot() {
+          return !!this.$slots["footer"] || this.footer;
+        }, fire: function fire() {
+          this.$element.modal(options);
+        } } };module.exports = exports["default"];
   }, function (module, exports, __webpack_require__) {
     module.exports = { render: function render() {
-        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "box", class: [{ "box-solid": _vm.isSolid }, { "collapsed-box": _vm.isCollapsed }, "box-" + _vm.color] }, [_c("div", { staticClass: "box-header", class: { "with-border": _vm.headerHaveBorder } }, [_c("div", { staticClass: "box-title" }, [_vm._t("title", [_vm._v("Put your title here using slot with name title")])], 2), _vm._v(" "), _c("div", { staticClass: "box-tools pull-right" }, [_vm._t("box-tools", [_vm.isRemovable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "remove" } }, [_c("i", { staticClass: "fa fa-times" })]) : _vm._e(), _vm._v(" "), _vm.isCollapsable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "collapse" } }, [_c("i", { staticClass: "fa", class: _vm.collapseIcon })]) : _vm._e()])], 2)]), _vm._v(" "), _c("div", { staticClass: "box-body" }, [_vm._t("default", [_vm._v("Put your content here using default slot")])], 2), _vm._v(" "), _vm.hasFooterSlot() ? _c("div", { staticClass: "box-footer" }, [_vm._t("footer", [_vm._v("This is the footer!")])], 2) : _vm._e(), _vm._v(" "), _vm.isLoading ? _c("div", { staticClass: "overlay" }, [_c("i", { staticClass: "fa fa-refresh fa-spin" })]) : _vm._e()]);
+        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "box", class: [{ "box-solid": _vm.isSolid }, { "collapsed-box": _vm.isCollapsed }, "box-" + _vm.color] }, [_c("div", { staticClass: "box-header", class: { "with-border": _vm.headerHaveBorder } }, [_c("div", { staticClass: "box-title" }, [_vm._t("title", [_vm._v("Put your title here using slot with name title")])], 2), _vm._v(" "), _c("div", { staticClass: "box-tools pull-right" }, [_vm._t("box-tools", [_vm.isCollapsable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "collapse" } }, [_c("i", { staticClass: "fa", class: _vm.collapseIcon })]) : _vm._e(), _vm._v(" "), _vm.isRemovable ? _c("button", { staticClass: "btn btn-box-tool", attrs: { type: "button", "data-widget": "remove" } }, [_c("i", { staticClass: "fa fa-times" })]) : _vm._e()])], 2)]), _vm._v(" "), _c("div", { staticClass: "box-body" }, [_vm._t("default", [_vm._v("Put your content here using default slot")])], 2), _vm._v(" "), _vm.hasFooterSlot() ? _c("div", { staticClass: "box-footer" }, [_vm._t("footer", [_vm._v("This is the footer!")])], 2) : _vm._e(), _vm._v(" "), _vm.isLoading ? _c("div", { staticClass: "overlay" }, [_c("i", { staticClass: "fa fa-refresh fa-spin" })]) : _vm._e()]);
       }, staticRenderFns: [] };module.exports.render._withStripped = true;if (false) {
       module.hot.accept();if (module.hot.data) {
         require("vue-hot-reload-api").rerender("data-v-318cbce7", module.exports);
@@ -25523,6 +25554,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }, staticRenderFns: [] };module.exports.render._withStripped = true;if (false) {
       module.hot.accept();if (module.hot.data) {
         require("vue-hot-reload-api").rerender("data-v-87bfb210", module.exports);
+      }
+    }
+  }, function (module, exports, __webpack_require__) {
+    module.exports = { render: function render() {
+        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("div", { staticClass: "modal", class: ["modal-" + _vm.color] }, [_c("div", { staticClass: "modal-dialog" }, [_c("div", { staticClass: "modal-content" }, [_c("div", { staticClass: "modal-header" }, [_vm._m(0), _vm._v(" "), _vm._t("title", [_vm._v("Put your title here using slot with name title")])], 2), _vm._v(" "), _c("div", { staticClass: "modal-body" }, [_vm._t("default", [_vm._v("Put your modal content here using default slot")])], 2), _vm._v(" "), _vm.hasFooterSlot() ? _c("div", { staticClass: "modal-footer" }, [_vm._t("footer", [_vm.isCancellable ? _c("button", { staticClass: "btn pull-left", class: ["btn-" + _vm.color], attrs: { type: "button", "data-dismiss": "modal" } }, [_vm._v(_vm._s(this.cancelText))]) : _vm._e(), _vm._v(" "), _vm.isOkable ? _c("button", { staticClass: "btn", class: ["btn-" + _vm.color], attrs: { type: "button" } }, [_vm._v(_vm._s(this.okText))]) : _vm._e()])], 2) : _vm._e()])])]);
+      }, staticRenderFns: [function () {
+        var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c("button", { staticClass: "close", attrs: { type: "button", "data-dismiss": "modal", "aria-label": "Close" } }, [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]);
+      }] };module.exports.render._withStripped = true;if (false) {
+      module.hot.accept();if (module.hot.data) {
+        require("vue-hot-reload-api").rerender("data-v-d6c0f06e", module.exports);
       }
     }
   }]);
